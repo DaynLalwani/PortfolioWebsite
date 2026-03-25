@@ -26,7 +26,7 @@
 
 <model-viewer
   id="mv"
-  src="https://DaynLalwani.github.io/PlainSimulations/Bake/frame_0000.glb"
+  src="https://raw.githubusercontent.com/DaynLalwani/PlainSimulations/main/Bake/frame_0000.glb"
   camera-controls
   interaction-prompt="none"
   shadow-intensity="0"
@@ -54,7 +54,7 @@
     label.textContent = pad(n) + ' / 0449';
     clearTimeout(debounce);
     debounce = setTimeout(() => {
-      mv.src = './Bake/frame_' + pad(n) + '.glb';
+      mv.src = 'https://raw.githubusercontent.com/DaynLalwani/PlainSimulations/main/Bake/frame_' + pad(n) + '.glb';
     }, 150);
   });
 </script>
